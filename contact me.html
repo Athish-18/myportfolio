@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <header>
+    <style>
+       nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        nav ul li a:hover {
+
+            text-decoration: none;
+            color: lavender;
+            font-size: 1.04rem;
+
+
+        }
+
+    </style>
+    <nav>
+        <div class="left">Athish's Portfolio</div>
+        <div class="right">
+            <ul>
+
+                <li><a href="Index.html">About </a></li>
+                <li><a href="">Services </a></li>
+                <li><a href="Projects.html">Projects </a></li>
+                <li><a href="contact me.html">Contact me </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+</head>
+<body>
+
+  
+
+<div class="container3">
+  <h1 class="header1"> Subscribe Form</h1>
+  <div class="container3-1">
+      <input class="input1" type="email" placeholder="e.g., email@example.com">
+      <button class="btn1" onclick="submit()">submit</button>
+     
+  </div>
+  <br>
+  <input class="input1" type="name" placeholder="e.g., Ram"> Enter your name
+</div>
+<br>
+<form action="/submit" method="post">
+  <label for="optionalText">Optional Text:</label>
+  <br>
+  <input type="text" id="optionalText" name="optionalText"  size= "30" placeholder="Your Messege"> Messege
+</form>
+<script>
+  function submit() {
+     
+      if (localStorage.getItem('submitted')) {
+          alert('You have submitted!');
+      } else {
+          
+          alert('Thank you for contacting');
+          
+          
+          localStorage.setItem('submitted', true);
+      }
+  }
+</script>
+
+</body>
+<hr>
+<p class="text-center text-body-secondary">© Athish Portfolio.com | All rights reserved.</p>
+
+
+
+</html>
